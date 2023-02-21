@@ -1,0 +1,12 @@
+main
+
+.idea/
+.vscode/
+build/
+ignore/
+tmp/
+pkg/
+# yt-playlist-bgm-player/
+# yt-bgm-player-git-*
+nor
+# ytbgmplayer-git-*
