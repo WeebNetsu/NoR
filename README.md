@@ -14,6 +14,14 @@ There are other Nim web frameworks (even batteries included ones), but they are 
 
 RoR is a great framework, but has been held back because of the constant breaking changes (Ruby), slowish performance and somewhat steep learning curve, scaring some might-be RoR developers away. RoR is also dependent on Ruby, which is a great language, but dynamically typed not very popular anymore (especially outside of the RoR space). Don't get me wrong, NoR is not a replacement for RoR, it is an alternative for those who wants better performance, static typing, Python-like syntax and something that won't release breaking changes so often, and maybe an easier learning curve. -->
 
+## Usage
+
+### Create a new project
+
+No spaces should be in the project name.
+
+`nor new project_name`
+
 ## Why depend on x module?
 
 ### Web Services
@@ -44,3 +52,35 @@ These are potential plans for the future of NoR, however some of them may never 
 Take an issue (or think of a cool feature), clone the repository, make the change, create pull request!
 
 <!-- ## Supporting -->
+
+## TODO
+
+1. Generate project
+   - src
+     - `{name}.nim` (entry point)
+     - `{name}.nimble`
+       - name
+       - license
+       - author
+       - description
+       - srcDir
+       - bin
+       - requires "nim >= 1.6.10"
+     - `app/`
+       - `assets/` (or public/assets instead?)
+       - `controllers/` (will contain routes as well)
+       - `models/`
+       - `views/`
+     - `config/`
+       - `locales/`
+     - `db/`
+       - `schema.nim` (nim table/object)
+       - `seeds.nim`
+     - `log/`
+       - `development.log`
+     - `test/`
+       - `controllers/`
+       - `models/`
+     - `tmp/`
+1. Initialize git repo
+1. Create README.md

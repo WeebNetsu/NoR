@@ -1,5 +1,21 @@
-# This is just an example to get you started. A typical binary package
-# uses this file as the main entry point of the application.
+import pkg/argparse
+import commands
 
 when isMainModule:
-  echo("Hello, World!")
+    # https://github.com/iffy/nim-argparse
+    var p = newParser:
+        command("new"):
+            arg("projectName")
+            run:
+                commandNew(opts)
+
+    try:
+        var param: seq[string] = @[]
+
+        for paramNum in 1..os.paramCount():
+            param.add(os.paramStr(paramNum))
+
+        p.run(param)
+    except UsageError as e:
+        stderr.writeLine getCurrentExceptionMsg()
+        quit(1)
