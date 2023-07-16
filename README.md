@@ -14,6 +14,10 @@ There are other Nim web frameworks (even batteries included ones), but they are 
 
 RoR is a great framework, but has been held back because of the constant breaking changes (Ruby), slowish performance and somewhat steep learning curve, scaring some might-be RoR developers away. RoR is also dependent on Ruby, which is a great language, but dynamically typed not very popular anymore (especially outside of the RoR space). Don't get me wrong, NoR is not a replacement for RoR, it is an alternative for those who wants better performance, static typing, Python-like syntax and something that won't release breaking changes so often, and maybe an easier learning curve. -->
 
+## PoC
+
+Here is a proof of concept for this framework: [Click Me](https://github.com/WeebNetsu/nor-poc).
+
 ## Usage
 
 ### Create a new project
